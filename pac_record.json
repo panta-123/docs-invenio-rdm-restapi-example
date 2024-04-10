@@ -1,0 +1,160 @@
+{
+    "id": "g28ew-29d24",
+    "created": "2024-03-12T20:05:24.567052+00:00",
+    "updated": "2024-03-12T20:05:24.652010+00:00",
+    "links": {
+      "self": "https://inveniordm.jlab.org/api/records/g28ew-29d24",
+      "self_html": "https://inveniordm.jlab.org/records/g28ew-29d24",
+      "self_iiif_manifest": "https://inveniordm.jlab.org/api/iiif/record:g28ew-29d24/manifest",
+      "self_iiif_sequence": "https://inveniordm.jlab.org/api/iiif/record:g28ew-29d24/sequence/default",
+      "files": "https://inveniordm.jlab.org/api/records/g28ew-29d24/files",
+      "archive": "https://inveniordm.jlab.org/api/records/g28ew-29d24/files-archive",
+      "latest": "https://inveniordm.jlab.org/api/records/g28ew-29d24/versions/latest",
+      "latest_html": "https://inveniordm.jlab.org/records/g28ew-29d24/latest",
+      "draft": "https://inveniordm.jlab.org/api/records/g28ew-29d24/draft",
+      "versions": "https://inveniordm.jlab.org/api/records/g28ew-29d24/versions",
+      "access_links": "https://inveniordm.jlab.org/api/records/g28ew-29d24/access/links",
+      "reserve_doi": "https://inveniordm.jlab.org/api/records/g28ew-29d24/draft/pids/doi"
+    },
+    "revision_id": 3,
+    "parent": {
+      "id": "zrv71-dcj82",
+      "access": {
+        "owned_by": [
+          {
+            "user": 2
+          }
+        ],
+        "links": []
+      },
+      "communities": {
+        "ids": [
+          "a265c2d7-f7c6-41fa-9420-0401057095c6"
+        ],
+        "default": "a265c2d7-f7c6-41fa-9420-0401057095c6"
+      }
+    },
+    "versions": {
+      "is_latest": true,
+      "is_latest_draft": true,
+      "index": 1
+    },
+    "is_published": true,
+    "is_draft": false,
+    "pids": {
+      "oai": {
+        "identifier": "oai:inveniordm.jlab.org:g28ew-29d24",
+        "provider": "oai"
+      }
+    },
+    "metadata": {
+      "resource_type": {
+        "id": "publication-proposal",
+        "title": {
+          "de": "Antrag",
+          "en": "Proposal"
+        }
+      },
+      "creators": [
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Voutier, E",
+            "given_name": "E",
+            "family_name": "Voutier",
+            "identifiers": [
+              {
+                "identifier": "0000-0003-4990-3369",
+                "scheme": "orcid"
+              }
+            ]
+          },
+          "role": {
+            "id": "contactperson",
+            "title": {
+              "de": "Kontaktperson",
+              "en": "Contact person"
+            }
+          },
+          "affiliations": [
+            {
+              "name": "ICJLAB"
+            }
+          ]
+        },
+        {
+          "person_or_org": {
+            "type": "personal",
+            "name": "Burkert, Volker",
+            "given_name": "Volker",
+            "family_name": "Burkert"
+          },
+          "role": {
+            "id": "projectleader",
+            "title": {
+              "de": "ProjektleiterIn",
+              "en": "Project leader"
+            }
+          },
+          "affiliations": [
+            {
+              "name": "Thomas Jefferson National Accelerator Facility"
+            }
+          ]
+        }
+      ],
+      "title": "Beam Charge Asymmetries for Deeply Virtual Compton Scattering on the Proton at CLAS12",
+      "publisher": "inveniordm_jlab",
+      "publication_date": "2024-03-12",
+      "rights": [
+        {
+          "id": "cc-by-4.0",
+          "title": {
+            "en": "Creative Commons Attribution 4.0 International"
+          },
+          "description": {
+            "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+          },
+          "icon": "cc-by-icon",
+          "props": {
+            "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+            "scheme": "spdx"
+          }
+        }
+      ],
+      "description": "<p>The parameterization of the nucleon structure through Generalized Parton Distributions (GPDs) shed a new light on the nucleon internal dynamics. For instance, GPDs provide an unprecedented experimental access to the orbital momentum of the nucleon and the distribution of forces experienced by partons. For its direct interpretation, Deeply Virtual Compton Scattering (DVCS) is the golden channel for GPDs investigation. The DVCS process interferes with the Bethe-Heitler (BH) mechanism to constitute the leading order amplitude of the eN → eN γ process. The study of the epγ reaction with polarized positron and electron beams gives a complete set of unique observables to unravel the different contributions to the epγ cross section. This separates the different reaction amplitudes, providing a direct access to their real and imaginary parts, which greatly simplifies physics interpretation. This procures crucial constraints on the model dependences and associated systematic uncertainties on GPDs extraction. The real part of the BH-DVCS interference amplitude is particularly sensitive to the D-term which parameterizes the Gravitational Form Factors of the nucleon. The separation of the imaginary parts of the interference and DVCS amplitudes provides insights on possible higher-twist effects. We propose to measure the unpolarized and polarized Beam Charge Asymmetries (BCAs) of the ⃗e±p → e ±pγ process on an unpolarized hydrogen target with CLAS12, using polarized positron and electron beams at 10.6 GeV. The azimuthal and tdependences of the unpolarized and polarized BCAs will be measured over a large (xB, Q2 ) phase space using a 2400-hour run with a luminosity of 0.66×1035 cm−2 ·s −1 .</p>"
+    },
+    "custom_fields": {
+      "pac:pac_number": 51,
+      "pac:beam_days": 100,
+      "pac:proposal_number": "E12+23-002",
+      "pac:pac_status": {
+        "id": "C1",
+        "title": {
+          "en": "C1"
+        }
+      },
+      "rdm:division": [
+        {
+          "id": "EPHB",
+          "title": {
+            "en": "Experimental Physics Hall B"
+          }
+        }
+      ]
+    },
+    "access": {
+      "record": "public",
+      "files": "public",
+      "embargo": {
+        "active": false,
+        "reason": null
+      },
+      "status": "open"
+    },
+    "files": {
+      "enabled": true,
+      "order": []
+    },
+    "status": "published"
+  }
