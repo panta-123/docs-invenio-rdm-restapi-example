@@ -1,0 +1,101 @@
+[
+    {
+        "metadata": {
+            "creators": [
+                {
+                    "person_or_org": {
+                        "type": "personal",
+                        "given_name": "Alexandre",
+                        "family_name": "Deur"
+                    },
+                    "affilliations": [
+                        {
+                            "name": "Thomas Jefferson National Accelerator Facility"
+                        }
+                    ],
+                    "role": {
+                        "id": "researcher",
+                        "title": {
+                            "de": "WissenschaftlerIn",
+                            "en": "Researcher"
+                        }
+                    }
+                }
+            ],
+            "contributors": [],
+            "publication_date": "2023-06-07",
+            "title": "Nucleon spin structure measurements at Jefferson Lab",
+            "description": "We summarize the measurements investigating the nucleon spin structure done at Jefferson Lab, a multi-GeV continuous electron beam facility located in Newport News, Virgina, USA. After motivating spin structure studies, we explain how Jefferson Lab uniquely contributes to them and describe the experimental program that was achieved with energies up to 6 GeV. We then discuss the continuation of this program at the higher energies now available thanks to the recent 12 GeV upgrade of Jefferson Lab's accelerator.",
+            "resource_type": {
+                "id": "other",
+                "title": {
+                    "de": "Sonstige",
+                    "en": "Other"
+                }
+            },
+            "related_identifiers": [
+                {
+                    "identifier": "https://misportal.jlab.org/sti/publications/18807",
+                    "scheme": "url",
+                    "relation_type": {
+                        "id": "isderivedfrom",
+                        "title": {
+                            "de": "Wird abgeleitet von",
+                            "en": "Is derived from"
+                        }
+                    }
+                },
+                {
+                    "identifier": "https://misportal.jlab.org/sti/publications/18807/attachments/6800/1810.08073.pdf",
+                    "scheme": "url",
+                    "relation_type": {
+                        "id": "isdocumentedby",
+                        "title": {
+                            "de": "Wird dokumentiert von",
+                            "en": "Is documented by"
+                        }
+                    }
+                }
+            ],
+            "rights": [
+                {
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
+                        "scheme": "spdx"
+                    },
+                    "title": {
+                        "en": "Creative Commons Attribution 4.0 International"
+                    },
+                    "description": {
+                        "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+                    }
+                }
+            ]
+        },
+        "access": {
+            "files": "public",
+            "record": "public",
+            "embargo": {
+                "active": false
+            }
+        },
+        "files": {
+            "enabled": false
+        },
+        "custom_fields": {
+            "rdm:division": [
+                {
+                    "id": "ENPH-EH-HD",
+                    "title": {
+                        "en": "Exp Nuclear Physics / Experimental Halls / Hall D"
+                    }
+                }
+            ],
+            "rdm:jlab_number": "JLAB-PHY-18-2855",
+            "rdm:jlab_number": "JLAB-TEST-18-2855",
+            "rdm:lanl_number": "arXiv:1810.08073"
+        }
+    }
+]

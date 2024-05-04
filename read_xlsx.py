@@ -136,7 +136,7 @@ for prop in extracted_data_list:
         "en":  prop['status'],
         }
     },
-    "pac:pacdb_url":prop['pac_hyperlink'],
+    #ß"pac:pacdb_url":prop['pac_hyperlink'],
     "pac:pac_rating": {
         "id": prop['Rating'],
         "title": {
@@ -145,9 +145,9 @@ for prop in extracted_data_list:
     },
     "rdm:division": [
         {
-        "id": "EPH" + str(prop['Hall']),
+        "id": "ENPH-EH-H" + str(prop['Hall']),
         "title": {
-            "en": "Experimental Physics Hall " +str(prop['Hall']) 
+            "en": "Exp Nuclear Physics / Experimental Halls / Hall %s " +str(prop['Hall']) 
         }
         }
     ]
@@ -192,6 +192,26 @@ for prop in extracted_data_list:
                   }
                 }
               ]
+    mydict["metadata"]["related_identifiers"]= [
+      {
+        "identifier": prop['pac_hyperlink'],
+        "scheme": "url",
+        "relation_type": {
+          "id": "isderivedfrom",
+          "title": {
+            "de": "Wird abgeleitet von",
+            "en": "Is derived from"
+          }
+        },
+        "resource_type": {
+          "id": "publication-proposal",
+          "title": {
+            "de": "Antrag",
+            "en": "Proposal"
+          }
+        }
+      }
+    ]
     mydict["access"] =  {"files": "public", "record": "public", "embargo": {"active": False}}
     mydict["files"] = {"enabled": False}
     meta.append(mydict)
