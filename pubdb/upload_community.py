@@ -3,7 +3,7 @@ import json
 
 # Create via https://127.0.0.1:5000/account/settings/applications/tokens/new/
 api = "https://inveniordm.jlab.org"
-token = "aujG6utjNo2nFHjEzTHMb5t2mfHgHnFeVpifXQdJXqYnYhjWM5M7gEd9FBTA"
+token = "Ick25gG6cagcmxaZNNRtt6KaLLpfV7qYIeHM67Ni7sIlsJSJmb1RKK5j1Pku"
 
 # Define a list of records you want to upload:
 # ('<record metadata json>.json', ['<datafile1>', '<datafile2>'])
@@ -45,7 +45,7 @@ for record in data:
         print("success create draft")
         record_id = r.json()['id']
         review_request = f'{api}/api/records/{record_id}/draft/review'
-        data = {"receiver": { "community": "b81c0c09-f80f-48fb-af43-733f74812d4f"},"type": "community-submission"}
+        data = {"receiver": { "community": "b03bbb6c-8acd-400b-a239-d6a10558d482"},"type": "community-submission"}
         r = requests.put(review_request, data=json.dumps(data), headers=h,verify=True)
         if r.status_code == 200:
             print("success created review request")

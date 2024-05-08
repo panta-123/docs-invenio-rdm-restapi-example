@@ -90,6 +90,7 @@ for file_name in json_files:
             inveniodict["metadata"]["title"] = tile_name
 
             abstract = entry['abstract']
+            custom_fields = {}
             inveniodict["metadata"]["description"] = abstract
             if 'document_type' in entry:
                 document_type = entry['document_type']
@@ -100,6 +101,12 @@ for file_name in json_files:
                                                                     "en": "Journal article"
                                                                     }
                                                                 }
+                    journal_name = entry["journal_name"]
+                    volume = entry['volume']
+                    issue = entry['issue']
+                    pages = entry['pages']
+                    custom_fields["journal:journal"]= {"title": journal_name, "issue": issue, "volume": volume,"pages": "15-23"}
+
                 elif document_type.lower() == "thesis":
                     inveniodict["metadata"]["resource_type"] = {"id": "publication-thesis",
                                                                 "title": {
@@ -107,6 +114,8 @@ for file_name in json_files:
                                                                     "en": "Thesis"
                                                                     }
                                                                 }
+                    awarding_university = entry["primary_institution"].split(",")[0]
+                    custom_fields["thesis:university"] = awarding_university
                     advisorList= entry["theses"]
                     if advisorList:
                         author_invenio_list = []
@@ -115,7 +124,7 @@ for file_name in json_files:
                             advisor_affiliation = advisor['institution']
                             if advisor_name:
                                 advisorNameDict = cleanedName(advisor_name)
-                                advidict = {"person_or_org":submitterNameDict,
+                                advidict = {"person_or_org":advisorNameDict,
                                         "role": {"id": "supervisor",
                                                 "title": {
                                                     "de": "SupervisorIn",
@@ -131,6 +140,9 @@ for file_name in json_files:
                                                                     "en": "Book"
                                                                     }
                                                                 }
+                    book_title = entry.get("book_title","")
+                    custom_fields["imprint:imprint"] = {"title": book_title}
+
                 elif document_type.lower() == "meeting":
                     inveniodict["metadata"]["resource_type"] = {"id": "other",
                                                                 "title": {
@@ -138,6 +150,30 @@ for file_name in json_files:
                                                                     "en": "Other"
                                                                     }
                                                                 }
+                    meeting_name = entry.get("meeting_name","")
+                    meeting_date = entry.get("meeting_date","")
+                    custom_fields["meeting:meeting"]= {"dates": meeting_date,"title": meeting_name, 
+                                                       #"place": "Here","acronym": "MC",
+                                                       #"session_part": "1",
+                                                       #"session": "VI",
+                                                       }
+
+                elif document_type.lower() == "Proceedings":
+                    inveniodict["metadata"]["resource_type"] = {
+                        "id": "publication-conferenceproceeding",
+                        "title": {
+                            "en": "Conference proceeding",
+                            }
+                            }
+                    proceeding_title = entry.get("proceeding_title","")
+                    if proceeding_title:
+                        journal_name = entry.get("publisher","")
+                        volume = entry.get('volume',"")
+                        issue = entry.get('issue',"")
+                        pages = entry.get('pages',"")
+                        custom_fields["journal:journal"]= {"title": journal_name, "issue": issue, 
+                                                           "volume": volume,"pages": "15-23"}
+
                 elif document_type.lower() == "other":
                     inveniodict["metadata"]["resource_type"] = {"id": "other",
                                                                 "title": {
@@ -155,18 +191,15 @@ for file_name in json_files:
             division = entry['affiliation']
             try:
                 divisonid = division_title_id[division]
-                custom_fields = {
-                "rdm:division": [
+                custom_fields["rdm:division"]= [
                     {
                         "id": divisonid,
                         "title": {
                             "en": division
                             }
                     }
-                ],
-                }
+                ]
             except Exception as err:
-                custom_fields = {}
                 print(division)
             
 
@@ -185,6 +218,8 @@ for file_name in json_files:
 
                         institution = author['institution']
                         institution_fullname = author['institution_fullname'].split(",", 1)[0]
+                        if not institution_fullname:
+                            institution_fullname = "UNKNOWN"
                         authdict = {"person_or_org":authorNameDict, 
                                     "affiliations":[{"name":institution_fullname}],
                                     "role": {"id": "researcher", 
