@@ -1,222 +1,102 @@
 [
     {
-    "metadata": {
-        "creators": [
-            {
-                "person_or_org": {
-                    "type": "personal",
-                    "given_name": "Alex",
-                    "family_name": "Bogacz"
-                },
-                "affiliations": [
-                    {
-                        "name": "Thomas Jefferson National Accelerator Facility"
-                    }
-                ],
-                "role": {
-                    "id": "researcher",
-                    "title": {
-                        "de": "WissenschaftlerIn",
-                        "en": "Researcher"
+        "communities": {
+            "ids": [
+              "7bbdfecf-5ced-4f50-9f2a-b90922d11ef1"
+            ]
+        },
+        "metadata": {
+            "creators": [
+                {
+                    "person_or_org": {
+                        "type": "personal",
+                        "given_name": "Alexandre",
+                        "family_name": "Deur"
+                    },
+                    "affiliations": [
+                        {
+                            "name": "Thomas Jefferson National Accelerator Facility"
+                        }
+                    ],
+                    "role": {
+                        "id": "researcher",
+                        "title": {
+                            "de": "WissenschaftlerIn",
+                            "en": "Researcher"
+                        }
                     }
                 }
-            }
-        ],
-        "contributors": [],
-        "publication_date": "2018-02-16",
-        "title": "Muon Acceleration Concepts for NuMAX: 'Dual-use' Linac and 'Dogbone' RLA",
-        "description": "We summarize the current state of a concept for muon acceleration aimed at a future Neutrino Factory. The main thrust of these studies was to reduce the overall cost while maintaining performance by exploring the interplay between the complexity of the cooling systems and the acceptance of the accelerator complex. To ensure adequate survival for the short-lived muons, acceleration must occur at high average gradient. The need for large transverse and longitudinal acceptances drives the design of the acceleration system to an initially low RF frequency, e.g., 325 MHz, which is then increased to 650MHz as the transverse size shrinks with increasing energy. High-gradient normal conducting RF cavities at these frequencies require extremely high peakpower RF sources. Hence superconducting RF (SRF) cavities are chosen. We consider two cost effective schemes for accelerating muon beams for a stageable Neutrino Factory: exploration of the so-called 'dual-use' linac concept, where the same lina",
-        "resource_type": {
-            "id": "publication-article",
-            "title": {
-                "de": "Zeitschriftenartikel",
-                "en": "Journal article"
+            ],
+            "contributors": [],
+            "publication_date": "2023-06-07",
+            "title": "Nucleon spin structure measurements at Jefferson Lab",
+            "description": "We summarize the measurements investigating the nucleon spin structure done at Jefferson Lab, a multi-GeV continuous electron beam facility located in Newport News, Virgina, USA. After motivating spin structure studies, we explain how Jefferson Lab uniquely contributes to them and describe the experimental program that was achieved with energies up to 6 GeV. We then discuss the continuation of this program at the higher energies now available thanks to the recent 12 GeV upgrade of Jefferson Lab's accelerator.",
+            "resource_type": {
+                "id": "other",
+                "title": {
+                    "de": "Sonstige",
+                    "en": "Other"
+                }
+            },
+            "related_identifiers": [
+                {
+                    "identifier": "https://misportal.jlab.org/sti/publications/18807",
+                    "scheme": "url",
+                    "relation_type": {
+                        "id": "isderivedfrom",
+                        "title": {
+                            "de": "Wird abgeleitet von",
+                            "en": "Is derived from"
+                        }
+                    }
+                },
+                {
+                    "identifier": "https://misportal.jlab.org/sti/publications/18807/attachments/6800/1810.08073.pdf",
+                    "scheme": "url",
+                    "relation_type": {
+                        "id": "isdocumentedby",
+                        "title": {
+                            "de": "Wird dokumentiert von",
+                            "en": "Is documented by"
+                        }
+                    }
+                }
+            ]
+        },
+        "parent": {
+            "communities": {
+                "default": "03cfbd45-6332-4680-9960-939ed7a2c3b9",
+                "ids": [
+                  "03cfbd45-6332-4680-9960-939ed7a2c3b9"
+                ]
+              }
+        },
+        "access": {
+            "files": "public",
+            "record": "public",
+            "embargo": {
+                "active": false
             }
         },
-        "related_identifiers": [
-            {
-                "identifier": "https://misportal.jlab.org/sti/publications/15342",
-                "scheme": "url",
-                "relation_type": {
-                    "id": "isderivedfrom",
-                    "title": {
-                        "de": "Wird abgeleitet von",
-                        "en": "Is derived from"
-                    }
-                }
-            },
-            {
-                "identifier": "https://misportal.jlab.org/sti/publications/15342/attachments/7224/Bogacz_2018_J._Inst._13_P02002(1).pdf",
-                "scheme": "url",
-                "relation_type": {
-                    "id": "isdocumentedby",
-                    "title": {
-                        "de": "Wird dokumentiert von",
-                        "en": "Is documented by"
-                    }
-                }
-            },
-            {
-                "identifier": "https://misportal.jlab.org/sti/publications/15342/attachments/1153/1708.01274.pdf",
-                "scheme": "url",
-                "relation_type": {
-                    "id": "isdocumentedby",
-                    "title": {
-                        "de": "Wird dokumentiert von",
-                        "en": "Is documented by"
-                    }
-                }
-            }
-        ],
-        "rights": [
-            {
-                "icon": "cc-by-icon",
-                "id": "cc-by-4.0",
-                "props": {
-                    "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
-                    "scheme": "spdx"
-                },
-                "title": {
-                    "en": "Creative Commons Attribution 4.0 International"
-                },
-                "description": {
-                    "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
-                }
-            }
-        ]
-    },
-    "access": {
-        "files": "public",
-        "record": "public",
-        "embargo": {
-            "active": false
-        }
-    },
-    "files": {
-        "enabled": false
-    },
-    "custom_fields": {
-        "rdm:division": [
-            {
-                "id": "AORD-CASAC-CASAC",
-                "title": {
-                    "en": "Accelerator Ops, R&D / Cntr-Adv Studies of Acce / Ctr for Adv Stud of Accel"
-                }
-            }
-        ],
-        "rdm:jlab_number": "JLAB-ACP-18-2667",
-        "rdm:osti_number": "1425793"
-    }
-},
-{
-    "metadata": {
-        "creators": [
-            {
-                "person_or_org": {
-                    "type": "personal",
-                    "given_name": "Alexandre",
-                    "family_name": "Deur"
-                },
-                "affiliations": [
-                    {
-                        "name": "Thomas Jefferson National Accelerator Facility"
-                    }
-                ],
-                "role": {
-                    "id": "researcher",
-                    "title": {
-                        "de": "WissenschaftlerIn",
-                        "en": "Researcher"
-                    }
-                }
-            }
-        ],
-        "contributors": [],
-        "publication_date": "2018-02-16",
-        "title": "The QCD running coupling at all scales and the connection between hadron masses and Lambda_s",
-        "description": "We report on recent experimental and theoretical developments in our understanding of the QCD running coupling $\\alpha_s$ in QCD's nonperturbative regime. They allow us to analytically compute the hadron mass spectrum, with $\\Lambda_s$ the only input necessary to this determination. The computed spectra agrees well with experimental data.",
-        "resource_type": {
-            "id": "other",
-            "title": {
-                "de": "Sonstige",
-                "en": "Other"
-            }
+        "files": {
+            "enabled": false
         },
-        "related_identifiers": [
-            {
-                "identifier": "https://misportal.jlab.org/sti/publications/15341",
-                "scheme": "url",
-                "relation_type": {
-                    "id": "isderivedfrom",
-                    "title": {
-                        "de": "Wird abgeleitet von",
-                        "en": "Is derived from"
-                    }
-                }
+        "custom_fields": {
+            "meeting:meeting": {
+                "dates": "5/28/2018",
+                "title": "CIPANP 2018"
             },
-            {
-                "identifier": "https://misportal.jlab.org/sti/publications/15341/attachments/7197/NSTAR17_proc_Deur1.pdf",
-                "scheme": "url",
-                "relation_type": {
-                    "id": "isdocumentedby",
+            "rdm:division": [
+                {
+                    "id": "ENPH-EH-HD",
                     "title": {
-                        "de": "Wird dokumentiert von",
-                        "en": "Is documented by"
+                        "en": "Exp Nuclear Physics / Experimental Halls / Hall D"
                     }
                 }
-            },
-            {
-                "identifier": "https://misportal.jlab.org/sti/publications/15341/attachments/462/NSTAR17_proc_Deur1.pdf",
-                "scheme": "url",
-                "relation_type": {
-                    "id": "isdocumentedby",
-                    "title": {
-                        "de": "Wird dokumentiert von",
-                        "en": "Is documented by"
-                    }
-                }
-            }
-        ],
-        "rights": [
-            {
-                "icon": "cc-by-icon",
-                "id": "cc-by-4.0",
-                "props": {
-                    "url": "https://creativecommons.org/licenses/by/4.0/legalcode",
-                    "scheme": "spdx"
-                },
-                "title": {
-                    "en": "Creative Commons Attribution 4.0 International"
-                },
-                "description": {
-                    "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
-                }
-            }
-        ]
-    },
-    "access": {
-        "files": "public",
-        "record": "public",
-        "embargo": {
-            "active": false
+            ],
+            "rdm:jlab_number": "JLAB-PHY-18-2855",
+            "rdm:lanl_number": "arXiv:1810.08073",
+            "rdm:pubID":1230030303
         }
-    },
-    "files": {
-        "enabled": false
-    },
-    "custom_fields": {
-        "rdm:division": [
-            {
-                "id": "ENPH-EH-HD",
-                "title": {
-                    "en": "Exp Nuclear Physics / Experimental Halls / Hall D"
-                }
-            }
-        ],
-        "rdm:experiment_number": "E94-010 E91-023 E93-009 ",
-        "rdm:jlab_number": "JLAB-PHY-18-2672",
-        "rdm:osti_number": "1482961",
-        "rdm:lanl_number": "arXiv:1803.07605"
     }
-}
 ]
